@@ -21,7 +21,22 @@
             <!-- Cards will be dynamically injected by JavaScript -->
         </div>
 
-        <button id="restart-btn">Restart Game</button>
+      <div class="buttons-container">
+    <button id="restart-btn">Restart Game</button>
+    <button id="preview-btn" title="Preview Cards">👁️ peek</button>
+</div>
+    </div>
+    <!-- Congratulations Pop-up Modal -->
+    <div class="modal-overlay" id="win-modal">
+        <div class="modal-content">
+            <div class="modal-icon">🎉</div>
+            <h2>Congratulations!</h2>
+            <p>You have successfully matched all the cards!</p>
+            <div class="modal-stats">
+                <div>Total Moves: <span id="final-moves">0</span></div>
+            </div>
+            <button id="modal-new-game-btn">Play New Game</button>
+        </div>
     </div>
 
 
